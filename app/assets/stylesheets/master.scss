@@ -74,3 +74,25 @@ body {
 .booyah-box h2, .booyah-box h1 {
   margin: 10px;
 }
+
+.navbar-inverse .navbar-nav .nav-link {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 800;
+  color: maroon;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(129,29,24, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
+
+.help-block {
+  color: #ff3333;
+  background-color: #ffeeee;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+  margin: 10px;
+}
