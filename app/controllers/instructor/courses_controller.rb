@@ -14,7 +14,7 @@ class Instructor::CoursesController < ApplicationController
     if @course.valid?
       redirect_to instructor_course_path(@course)
     else
-      render :new, status: :unprocessable_entity
+      @course = Course.find(params[:id]) 
     end
   end
   
