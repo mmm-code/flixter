@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resource :dashboard, only: [:show]
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#index'
@@ -16,7 +17,7 @@ Rails.application.routes.draw do
       resources :lessons, only: [:new, :create]
     end
     resources :courses, only: [:new, :create, :show] do
-      resources :sections, only: [:new, :create]
+      resources :sections, only: [:create]
     end
   end
 end
