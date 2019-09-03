@@ -83,3 +83,9 @@ gem 'carrierwave-aws'
 gem "fog-aws"
 
 gem "figaro"
+
+gem 'stripe'
+
+gem 'ranked-model'
+
+gem 'jquery-ui-rails'
