@@ -32,6 +32,7 @@ class Instructor::SectionsController < ApplicationController
     @current_course ||= Course.find(params[:course_id])
     else
       current_section.course
+    end
   end
 
   def section_params
