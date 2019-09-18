@@ -1,6 +1,8 @@
 @import "bootstrap";
 @import "font-awesome";
 
+
+
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
@@ -173,4 +175,70 @@ ul .header .fa {
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 20px;
   margin: 20px;
+}
+
+
+/* alumni code */
+/* remove bullets from the list */
+.nobull {
+    list-style-type: none;
+}
+
+/* add hover to image */
+.imgrid li:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+
+/* The minmax() function */
+/* The article list */
+
+.breweries > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+.breweries > ul > li {
+   border: 1px solid #E2E2E2;
+   border-radius: .5rem;
+}
+
+.breweries > ul > li > figure {
+   max-height: 220 px;
+   overflow: hidden;
+   border-top-left-radius: .5rem;
+   border-top-right-radius: .5rem;
+   position: relative;
+}
+
+.breweries > ul > li > figure > img {
+   width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption {
+   position: absolute;
+   bottom: 0;
+   background-color: rgba(0,0,0,.7);
+   width: auto;
+}
+
+.breweries > ul > li > figure > figcaption > h3 {
+   color: white;
+   padding: .75rem;
+   font-size: 1.25rem;
+}
+
+.breweries > ul > li > p {
+   font-size: 1.5rem;
+   line-height: 2;
+   padding: 1rem .75rem;
+   color: #666666;
+}
+
+.breweries > ul > li > a {
+   padding: .5rem 1rem;
+   margin: .5rem;
 }

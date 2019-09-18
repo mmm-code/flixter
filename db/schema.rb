@@ -10,10 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_03_193102) do
+ActiveRecord::Schema.define(version: 2019_09_18_025813) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "alumnis", force: :cascade do |t|
+    t.string "image_name"
+    t.string "comment"
+  end
 
   create_table "courses", force: :cascade do |t|
     t.string "title"
@@ -60,6 +65,21 @@ ActiveRecord::Schema.define(version: 2019_09_03_193102) do
     t.integer "row_order"
     t.index ["course_id"], name: "index_sections_on_course_id"
     t.index ["row_order"], name: "index_sections_on_row_order"
+  end
+
+  create_table "squads", force: :cascade do |t|
+    t.string "image_name"
+    t.string "title"
+    t.string "profession"
+  end
+
+  create_table "team", force: :cascade do |t|
+    t.string "image_name"
+    t.string "title"
+    t.string "position"
+  end
+
+  create_table "teams", force: :cascade do |t|
   end
 
   create_table "users", force: :cascade do |t|
